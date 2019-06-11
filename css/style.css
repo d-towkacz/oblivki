@@ -182,8 +182,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-pages {
-  height: 70px;
-  padding: 15px 0;
+  height: 66px;
+  padding: 11px 0;
   background-color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
@@ -1776,7 +1776,10 @@ video.my-background-video {
 }
 
 .main-nav a:hover span {
-  border-bottom:1px dotted #4C85FF;
+  border-bottom: 2px solid #304058;
+}
+.main-nav li.active > a:hover span {
+  border-bottom: none;
 }
 
 .btn-campaing {
