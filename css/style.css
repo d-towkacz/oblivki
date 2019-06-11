@@ -300,7 +300,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #314d78;
+  color: #142339;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -2044,4 +2044,12 @@ margin-right: 1%;
   background: #2e415f;
 background: -webkit-linear-gradient(to top, #2e415f, #ffffff);
 background: linear-gradient(to top, #2e415f, #ffffff);
+}
+.logo h1 a svg {
+filter: brightness(50%);
+}
+.header-scrolled .logo h1 a svg {
+transform: scale(0.80);
+filter: brightness(90%);
+margin-top: 5px;
 }
