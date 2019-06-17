@@ -24,7 +24,7 @@
   });
 
   // Initiate the wowjs animation library
-  new WOW().init();
+  //new WOW().init();
 
   // Header scroll class
   $(window).scroll(function() {
@@ -126,7 +126,7 @@
   headerCar.owlCarousel({
     animateOut: 'bounceOutRight',
     animateIn: 'bounceInLeft',
-    autoplay: true,
+    autoplay: false,
     dots: true,
     loop: true,
     items: 1,
@@ -148,7 +148,7 @@
 
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
-    autoplay: true,
+    autoplay: false,
     dots: false,
     loop: true,
     smartSpeed:3600,
