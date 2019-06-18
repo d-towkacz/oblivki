@@ -155,7 +155,7 @@
     fluidSpeed:2000,
     autoplaySpeed:2000,
     autoplayTimeout:6000,
-    responsive: { 0: { items: 3 }, 768: { items: 5 }, 900: { items: 5 }
+    responsive: { 0: { items: 3 }, 768: { items: 6 }, 900: { items: 6 }
     }
   });
 
