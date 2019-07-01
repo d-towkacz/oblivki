@@ -126,7 +126,7 @@
   headerCar.owlCarousel({
     animateOut: 'bounceOutRight',
     animateIn: 'bounceInLeft',
-    autoplay: false,
+    autoplay: true,
     dots: true,
     loop: true,
     items: 1,
@@ -188,7 +188,7 @@ $win.on('scroll', function() {
 });
 
 $('#intro').vide({
-  "mp4":"video/v1.mp4"
+  "mp4":"video/video-back2.mp4"
 },{
   className: 'back-video'
 }

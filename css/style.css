@@ -314,13 +314,13 @@ h6 {
   color: #3D4F9F;
   padding: 10px 15px;
   transition: 0.3s;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
   text-transform: none;
-  font-weight: 600;
-  letter-spacing: .075em;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-weight: 400;
+  letter-spacing: .095em;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .main-nav > ul > li.active a {
   /* background: #314d78;
@@ -409,8 +409,8 @@ h6 {
 }
 .main-nav .sign-in {
   border-radius: 4px;
-  background: #4b85fe24 !important;
-  border: 1px solid #4b85fe69;
+  /* background: #4b85fe24 !important;
+  border: 1px solid #4b85fe69; */
 }
 .main-nav .sign-in:hover {
   background: #4C85FE !important;
@@ -1934,7 +1934,7 @@ video.my-background-video {
 }
 
 .main-nav a:hover span, .main-nav li.active a span, .main-nav li.active a:hover span {
-  border-bottom: 1px solid #3D4F9F !important;
+  border-bottom: 2px solid #3D4F9F !important;
 }
 .main-nav li.active > a:hover span {
   border-bottom: none;
@@ -1949,19 +1949,25 @@ video.my-background-video {
 
 }
 .main-nav .btn-campaing {
-  padding-bottom: 12px !important;
-  margin-top: -2px;
+  padding-bottom: 8px !important;
+  margin-top: -1px;
 }
 
 .main-nav a.btn-campaing:hover {
   color:white;
 }
 .main-nav a.sign-in {
-  margin-left: 10px;
+  margin-left: 5px;
+  background: none !important;
+  border-radius: 5px;
 }
+
 .main-nav a.sign-in:hover {
-  background: #007bff;
-  color: white;
+  /* background: #007bff; */
+  /* color: white; */
+  background: none !important;
+
+
 }
 .bs-tooltip-bottom {
   margin-top:4px;
@@ -2082,18 +2088,20 @@ margin-right: 1%;
 .header-item h1 {
 	line-height: 1em;
 	margin-bottom: 100px;
-	color: #ffc107ed;
+	color: white;
   text-align: center;
   font-size: 2em;
 }
 .header-item h1 span {
-  background: #142339c7;
+  background: #072bb19c;
     display: inline;
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 35px;
-    box-shadow: inset 0px -18px 0 5px #0228464a;
+    border-radius: 5px;
+    /* box-shadow: inset 0px -18px 0 5px #0228464a; */
+    font-family: "Roboto";
+        letter-spacing: 0.03em;
 }
 .header-item h2 {
   text-align: right;
@@ -2113,12 +2121,14 @@ margin-right: 1%;
 
 #intro {
   overflow: hidden;
-  background: #6888ff47;
+  background: #dae2ff47;
 /* background: -webkit-linear-gradient(to top, #2e415f, #ffffff);
 background: linear-gradient(to top, #2e415f, #ffffff); */
 }
 .logo h1 a svg {
 /* filter: brightness(50%); */
+transform: scale(0.8);
+margin-top:-10px;
 }
 .header-scrolled .logo h1 a svg {
 transform: scale(0.75);
@@ -2127,13 +2137,80 @@ margin-top: 0px;
 margin-bottom: 5px;
 }
 
-
+.main-nav .btn-campaing {
+  box-shadow: none;
+  background: none;
+  color:#3D4F9F !important;
+  border-color: #3D4F9F;
+}
 
 .main-nav a span i {
   display: none;
 }
 
 
+
+.header-buttons {
+
+  font-size: 24px;
+  display: inline-block;
+box-shadow: 0px 10px 50px rgba(86, 91, 105, 0.5);
+
+line-height: 80px;
+padding-left: 30px;
+padding-right: 30px;
+border-radius: 55px;
+font-family: "Roboto";
+letter-spacing: 0.07em;
+color:white;
+  background: #496df5;
+
+margin-bottom: 70px;
+}
+.header-buttons:hover {
+background: #5E80FF;
+  color:white;
+  box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+}
+
+.plask {
+  font-size: 24px;
+  color:#243994d1;
+  padding: 30px;
+  width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+
+
+header.header-scrolled {
+  background: #4C85FE !important;
+  box-shadow: 0px 0px 30px rgba(11, 35, 91, 0.72) !important;
+
+
+}
+
+header.header-scrolled .logo h1 a svg {
+  filter: brightness(850%);
+}
+
+header.header-scrolled .main-nav a {
+  color: white !important;
+}
+header.header-scrolled .main-nav a:hover span,
+header.header-scrolled .main-nav li.active a span,
+header.header-scrolled .main-nav li.active a:hover span {
+  border-bottom: 2px solid white !important
+}
+
+header.header-scrolled .main-nav .btn-campaing {
+  border-color: white;
+}
+
+header.header-scrolled .main-nav .drop-down ul {
+  background: #4C85FE !important;
+}
 
 @media (max-width: 991px) {
   #topbar {
