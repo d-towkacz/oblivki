@@ -190,21 +190,21 @@
 
 
 
-// $('#intro').vide({
-//   "mp4":"video/video-back2.mp4"
-// },{
-//   className: 'back-video'
-// }
-// );
+$('#intro').vide({
+  "mp4":"video/video-back2.mp4"
+},{
+  className: 'back-video'
+}
+);
 
 
 
-$('.icon-svg-header').hover(function(){
-  var $svg = $(this).find('svg').drawsvg();
-  $svg.drawsvg('animate');
-}, function(){
-
-});
+// $('.icon-svg-header').hover(function(){
+//   var $svg = $(this).find('svg').drawsvg();
+//   $svg.drawsvg('animate');
+// }, function(){
+//
+// });
 
 // var player = $('#module-video').YTPlayer({
 //   fitToBackground: false,
