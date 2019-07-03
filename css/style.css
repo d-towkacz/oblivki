@@ -553,12 +553,34 @@ text-shadow: 1px 1px 0px #35353542;
 --------------------------------*/
 
 .section-header h3 {
-  font-size: 32px;
-  color: #3D4F9F;
-  text-align: center;
-  font-weight: 400;
-  position: relative;
-  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+    color: #3d72e3;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.07em;
+    /* background: linear-gradient(208.93deg, #536bc4 12.77%, #5E80FF 73.11%); */
+    line-height: 1.3em;
+    /* border-left: 10px solid #4070d414; */
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+    /* border-radius: 4px; */
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 90px;
+    /* border-bottom: 2px dotted #5e80ff52; */
+    background: #4c85fe08;
+    padding: 10px;
+    /* border-radius: 50px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #bfc8fb2e;
+    width: 100%;
+    padding-top: 12px;
 }
 
 .section-header p {
@@ -776,17 +798,37 @@ bottom: 40px;
   margin: 0 0 15px 0;
   padding: 0;
   transition: 0.3s ease-in-out;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  text-align: center;
+  background: #f1f5ff4f;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    min-height: 320px;
+    border-bottom: 3px solid #6f96fa29;
 }
 
+.icon-svg-header {
+  background: #F1F5FF;
+  width: 110px;
+    height: 110px;
+    border-radius: 110px;
+    line-height: 110px;
+    margin-left: auto;
+margin-right: auto;
+}
+.icon-svg-header svg {
+  width: 50%;
+      height: auto;
+}
 #why-us .why-us-content .features i {
   font-size: 36px;
-float: left;
+/* float: left; */
 /* text-shadow: 3px 2px 0px #75757540; */
 line-height: 55px;
 
-transform: scale(0.7);
+transform: scale(0.8);
 border:none;
 /* padding: 15px; */
 width: 100px;
@@ -801,21 +843,30 @@ margin-right: 5px;
 }
 
 #why-us .why-us-content .features h4 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-left: 56px;
-
-  margin-bottom: 5px;
-  line-height: 1.3em;
-
-  color: #2a4eab;
-  letter-spacing: 0.04em;
+  font-size: 17px;
+    font-weight: 400;
+    font-family: "Open sans", sans-serif;
+    /* margin-left: 56px; */
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 5px;
+    margin-top: 35px;
+    line-height: 1.6em;
+    color: #3f6bcc;
+    letter-spacing: 0.02em;
+    min-height: 80px;
+      /* border-bottom: 1px dotted #4073f82b; */
 }
 
 #why-us .why-us-content .features p {
-  font-size: 16px;
-  margin-left: 56px;
-
+  font-size: 12px !important;
+  /* margin-left: 56px; */
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  padding-top: 20px;
+  color: #213e8c !important;
+  display: none;
 }
 
 #why-us .counters {
@@ -2210,6 +2261,147 @@ header.header-scrolled .main-nav .btn-campaing {
 
 header.header-scrolled .main-nav .drop-down ul {
   background: #4C85FE !important;
+}
+
+
+form input.hs-input, form select.hs-input {
+  border: 1px solid #4C85FE;
+    line-height: 32px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+        letter-spacing: 0.05em;
+        font-size: 16px;
+    background: white;
+width: 100% !important;
+    height: 46px;
+}
+form input.hs-input.invalid, form select.hs-input.invalid {
+  border: 1px solid red;
+}
+form input.hs-button{
+  background: #4C85FE;
+    box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+    border-radius: 4px;
+    border: 1px solid #4C85FE;
+    color: white !important;
+    line-height: 3em;
+    padding-left: 30px;
+    padding-right: 30px;
+        letter-spacing: 0.06em;
+
+}
+form label {
+  line-height: 1.3em;
+      color: #2f65d6;
+      letter-spacing: 0.04em;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      font-family: "Roboto", sans-serif;
+}
+form .hs-field-desc {
+  color:green;
+  font-size:14px;
+}
+form .hs_skype, form .hs_telegram  {
+  margin-left: 7px;
+}
+form .hs_submit {
+  margin-top:30px;
+}
+form select {
+  color:#999999;
+}
+form .hs-form-checkbox-display input {
+  height: 0px !important;
+  width: 30px !important;
+
+}
+form .hs-form-checkbox-display > span {
+  color: #4C85FE;
+  font-weight: 500;
+}
+form .hs-form-checkbox-display > input::before {
+  content: "\f372";
+    display: inline-block;
+    font-family: "Ionicons";
+    font-size: 30px;
+    margin-right: 7px;
+    position: absolute;
+    margin-top: -21px;
+    color: #4C85FE;
+}
+form .hs-form-checkbox-display > input:checked::before {
+   content: "\f373";
+}
+form .hs_publisher_category > label > span, form .hs_advertisers_verticals > label > span {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+form .hs_publisher_category > label, form .hs_advertisers_verticals > label {
+  padding-bottom: 20px;
+    padding-top: 20px;
+}
+.modal-title {
+  text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding-left: 15px;
+    color: #2a3f94;
+    font-size: 15px;
+}
+.modal-content {
+  background-color: #F5F8FF;
+}
+
+.modal-footer {
+  border-top: none;
+}
+.modal-body {
+  padding-bottom: 0px;
+}
+form > fieldset {
+  max-width: 100% !important;
+}
+form ul.inputs-list {
+  padding-left: 0px;
+}
+form ul.inputs-list li {
+  width: 32%;
+  display: inline-block;
+}
+form .hs-form-required {
+  color:red;
+  margin-left: 2px;
+}
+
+form .hs-error-msg, form label.hs-main-font-element {
+   position: absolute;
+   color:red;
+   font-size: 13px;
+   margin-top: -20px;
+}
+
+form input.hs-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cccccc;
+  opacity: 1; /* Firefox */
+}
+
+form input.hs-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #cccccc;
+}
+
+form input.hs-input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #cccccc;
+}
+
+.modal-dialog {
+    max-width: 870px;
+    margin: 1.75rem auto;
 }
 
 @media (max-width: 991px) {

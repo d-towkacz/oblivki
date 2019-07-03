@@ -175,30 +175,36 @@
 
 
 
-
-  var $doc = $(document),
-    $win = $(window),
-    $svg = $('.svg-area svg').drawsvg(),
-    max = $doc.height() - $win.height();
-
-$win.on('scroll', function() {
-  var p = ($win.scrollTop() / max) - 0.35;
-  $svg.drawsvg('progress', p);
-  console.log(p);
-});
-
-$('#intro').vide({
-  "mp4":"video/video-back2.mp4"
-},{
-  className: 'back-video'
-}
-);
-// $('.svg-area').hover(function(){
-//   var $svg = $(this).find('svg').drawsvg();
-//   $svg.drawsvg('animate');
-// }, function(){
 //
+//   var $doc = $(document),
+//     $win = $(window),
+//     $svg = $('.svg-area svg').drawsvg(),
+//     max = $doc.height() - $win.height();
+//
+// $win.on('scroll', function() {
+//   var p = ($win.scrollTop() / max) - 0.35;
+//   $svg.drawsvg('progress', p);
+//   console.log(p);
 // });
+
+
+
+
+// $('#intro').vide({
+//   "mp4":"video/video-back2.mp4"
+// },{
+//   className: 'back-video'
+// }
+// );
+
+
+
+$('.icon-svg-header').hover(function(){
+  var $svg = $(this).find('svg').drawsvg();
+  $svg.drawsvg('animate');
+}, function(){
+
+});
 
 // var player = $('#module-video').YTPlayer({
 //   fitToBackground: false,
