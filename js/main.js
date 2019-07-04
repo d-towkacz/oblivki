@@ -121,6 +121,22 @@
     //}
   });
 
+
+  $(".devices-carousel").owlCarousel({
+    //animateOut: 'fadeOutDownBig',
+    //animateIn: 'fadeInUpBig',
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1,
+    //smartSpeed:3600,
+    //fluidSpeed:2000,
+    //autoplaySpeed:2000,
+    //autoplayTimeout:6000,
+    //responsive: { 0: { items: 3 }, 768: { items: 5 }, 900: { items: 5 }
+    //}
+  });
+
   // Testimonials carousel (uses the Owl Carousel library)
   var headerCar = $(".header-carousel");
   headerCar.owlCarousel({
@@ -134,7 +150,7 @@
     smartSpeed:3600,
     fluidSpeed:2000,
     autoplaySpeed:2000,
-    autoplayTimeout:6000,
+    autoplayTimeout:12000,
     //autoWidth:1,
   });
   headerCar.on('changed.owl.carousel',function(e) {
@@ -148,13 +164,13 @@
 
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
-    autoplay: false,
+    autoplay: true,
     dots: false,
     loop: true,
-    smartSpeed:3600,
-    fluidSpeed:2000,
-    autoplaySpeed:2000,
-    autoplayTimeout:6000,
+    smartSpeed:2000,
+    fluidSpeed:3500,
+    autoplaySpeed:3500,
+    autoplayTimeout:9000,
     responsive: { 0: { items: 3 }, 768: { items: 6 }, 900: { items: 6 }
     }
   });
@@ -190,12 +206,12 @@
 
 
 
-$('#intro').vide({
-  "mp4":"video/video-back2.mp4"
-},{
-  className: 'back-video'
-}
-);
+// $('#intro').vide({
+//   "mp4":"video/video-back2.mp4"
+// },{
+//   className: 'back-video'
+// }
+// );
 
 
 
