@@ -206,12 +206,12 @@
 
 
 
-// $('#intro').vide({
-//   "mp4":"video/video-back2.mp4"
-// },{
-//   className: 'back-video'
-// }
-// );
+$('#intro').vide({
+  "mp4":"video/video-back2.mp4"
+},{
+  className: 'back-video'
+}
+);
 
 
 
