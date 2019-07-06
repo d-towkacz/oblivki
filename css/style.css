@@ -198,12 +198,11 @@ h6 {
 }
 
 #header .logo h1 {
-  font-size: 36px;
+
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 400;
-  letter-spacing: 3px;
+
   text-transform: uppercase;
 }
 
@@ -212,10 +211,10 @@ h6 {
   font-family: "Quicksand", sans-serif;
   text-transform: lowercase;
   color: #3D4F9F;
-  font-size: 30px;
+  font-size: 35px;
   text-decoration: none;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   line-height: 58px;
   /* text-shadow: 1px 0px 2px #2e3b50; */
 }
@@ -314,13 +313,14 @@ h6 {
   color: #3D4F9F;
   padding: 10px 15px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
   text-transform: none;
   font-weight: 400;
-  letter-spacing: .095em;
+  letter-spacing: .060em;
   margin-left: 2px;
   margin-right: 2px;
+  text-transform: uppercase;
 }
 .main-nav > ul > li.active a {
   /* background: #314d78;

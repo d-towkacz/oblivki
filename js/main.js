@@ -1,6 +1,11 @@
 (function ($) {
   "use strict";
-
+  var url = window.location.hash;
+  var hash = url.substring(url.indexOf('#')+1);
+  if (hash =="style1")
+  {
+      $('head').append('<link rel="stylesheet" type="text/css" href="css/style1.css">');
+  }
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
