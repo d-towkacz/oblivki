@@ -14,6 +14,8 @@
   {
       $('head').append('<link rel="stylesheet" type="text/css" href="css/style3.css">');
   }
+  console.log(hash);
+
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
