@@ -28,22 +28,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <script type="text/javascript">
-  var url = window.location.hash;
-  var hash = url.substring(url.indexOf('#')+1);
-  if (hash =="style1")
-  {
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'css/style1.css';
-    link.media = 'all';
-    head.appendChild(link);
-  }
-//alert(hash);
-  </script>
+
 
 
 
@@ -88,7 +73,7 @@
             </ul>
           </li>
           <li><a href="#" class="btn btn-primary btn-campaing scrollto" data-toggle="modal" data-target="#exampleModal">Создать кампанию</a></li>
-          <li><a href="#" class="btn sign-in" ><i class="fa-lg ion-locked" style="font-size: 18px;line-height: 3px;"></i> Войти</a></li>
+          <li><a href="#" class="btn sign-in" style="font-size:16px;"><i class="fa-lg ion-android-exit" style="font-size: 19px;line-height: 3px;"></i> Войти</a></li>
         </ul>
 
       </nav><!-- .main-nav -->
@@ -795,9 +780,7 @@
 
    <section>
      <div class="container">
-       <header class="section-header">
-         <h3>ttt</h3>
-       </header>
+
        <div class="row">
          <div class="col-lg-12">
 

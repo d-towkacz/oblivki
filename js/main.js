@@ -6,6 +6,14 @@
   {
       $('head').append('<link rel="stylesheet" type="text/css" href="css/style1.css">');
   }
+  if (hash =="style2")
+  {
+      $('head').append('<link rel="stylesheet" type="text/css" href="css/style2.css">');
+  }
+  if (hash =="style3")
+  {
+      $('head').append('<link rel="stylesheet" type="text/css" href="css/style3.css">');
+  }
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
