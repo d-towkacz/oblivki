@@ -52,7 +52,7 @@ background: #8760D1;
     opacity: 0.8;
 }
 header.header-scrolled {
-  background: #5680E9 !important;
+  background: #1b3984 !important;
       box-shadow: 0px 0px 5px #1d564e !important;
 }
 
@@ -173,7 +173,7 @@ header.header-scrolled .main-nav .drop-down ul {
       box-shadow: 0 0 30px #8760d066;
 }
 #call-to-action {
-  background: #c1c8e442;
+  background: linear-gradient(270deg, rgba(90, 185, 234, 0.3) 0%, rgba(86, 128, 233, 0.17) 50%, rgba(136, 96, 208, 0.18) 100%);
 }
 #call-to-action .cta-title {
   color: #8660d0;
