@@ -146,7 +146,7 @@ header.header-scrolled .main-nav .drop-down ul {
 }
 
 #colls .color-blue {
-  background: #8860D0;
+  background: linear-gradient(90deg, rgba(90, 185, 234, 0.3) 0%, rgba(86, 128, 233, 0.78) 50%, rgba(136,96,208,1) 100%)
 }
 #colls .color-white {
     color: #8860D0;
@@ -155,8 +155,8 @@ header.header-scrolled .main-nav .drop-down ul {
   fill:#8860D0;
 }
 .container-borders {
-  border-top: 1px solid #8860D0;
-    border-bottom: 1px solid #8860D0;
+  border-top: 1px solid #8860d04f;
+    border-bottom: 1px solid #8860d04f;
 }
 .owl-carousel .owl-item img {
       /* filter: grayscale(100%); */
