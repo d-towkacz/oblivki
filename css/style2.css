@@ -44,7 +44,7 @@ background: #8760D1;
   text-shadow: 1px 1px 0px #44231a7d;
 }
 #intro {
-  background: #277594eb !important;
+  background: linear-gradient(270deg, rgb(90, 185, 234) 0%, rgba(86, 128, 233, 0.54) 50%, rgb(136, 96, 208) 100%);
 }
 #header .logo h1 a {
     color: white !important;
