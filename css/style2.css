@@ -182,8 +182,9 @@ header.header-scrolled .main-nav .drop-down ul {
 }
 
 #call-to-action .badge-secondary {
-  color: #5AB9EA;
-  border: none;
+  color: #5680e9;
+    border: none;
+    box-shadow: 0 0 20px #5680e954;
 }
 #call-to-action .cta-text {
   color: #8660d0;
