@@ -1,20 +1,20 @@
 (function ($) {
   "use strict";
-  var url = window.location.hash;
-  var hash = url.substring(url.indexOf('#')+1);
-  if (hash =="style1")
-  {
-      $('head').append('<link rel="stylesheet" type="text/css" href="css/style1.css">');
-  }
-  if (hash =="style2")
-  {
-      $('head').append('<link rel="stylesheet" type="text/css" href="css/style2.css">');
-  }
-  if (hash =="style3")
-  {
-      $('head').append('<link rel="stylesheet" type="text/css" href="css/style3.css">');
-  }
-  console.log(hash);
+  // var url = window.location.hash;
+  // var hash = url.substring(url.indexOf('#')+1);
+  // if (hash =="style1")
+  // {
+  //     $('head').append('<link rel="stylesheet" type="text/css" href="css/style1.css">');
+  // }
+  // if (hash =="style2")
+  // {
+  //     $('head').append('<link rel="stylesheet" type="text/css" href="css/style2.css">');
+  // }
+  // if (hash =="style3")
+  // {
+  //     $('head').append('<link rel="stylesheet" type="text/css" href="css/style3.css">');
+  // }
+  // console.log(hash);
 
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
@@ -140,6 +140,21 @@
   $(".devices-carousel").owlCarousel({
     //animateOut: 'fadeOutDownBig',
     //animateIn: 'fadeInUpBig',
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1,
+    //smartSpeed:3600,
+    //fluidSpeed:2000,
+    //autoplaySpeed:2000,
+    //autoplayTimeout:6000,
+    //responsive: { 0: { items: 3 }, 768: { items: 5 }, 900: { items: 5 }
+    //}
+  });
+
+  $(".quotes-carousel").owlCarousel({
+    animateOut: 'bounceOutLeft',
+    animateIn: 'bounceInRight',
     autoplay: true,
     dots: true,
     loop: true,
