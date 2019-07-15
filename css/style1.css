@@ -131,11 +131,11 @@ header.header-scrolled .main-nav .drop-down ul {
     border: none;
     padding-left: 0px;
     font-weight: 800;
-    text-shadow: 2px 2px 1px #eab4a5c2;
+    /* text-shadow: 2px 2px 1px #eab4a5c2; */
     background: linear-gradient(170deg, #e8a87c0f 0%, #e8a87c00 100%);
     padding-left: 35px;
-    border-top: 1px solid #e27c6012;
-    border-bottom: 1px solid #e27c6012;
+    /* border-top: 1px solid #e27c6012;
+    border-bottom: 1px solid #e27c6012; */
 }
 
 .why-us .why-us-content .features {
@@ -219,7 +219,10 @@ header.header-scrolled .main-nav .drop-down ul {
 }
 
 #call-to-action .cta-title {
-  color: #c48c9e;
+  color: #40b3a3;
+    font-weight: 500;
+    padding-bottom: 30px;
+    font-size: 30px;
 }
 
 #call-to-action .badge-secondary {
@@ -228,7 +231,8 @@ header.header-scrolled .main-nav .drop-down ul {
 }
 
 #call-to-action .cta-text {
-  color: #c48c9e;
+  color: #e27c60;
+  margin-bottom: 50px;
 }
 
 .map-back {
