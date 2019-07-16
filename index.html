@@ -661,7 +661,7 @@
         <div class="row">
           <div class="col-lg-6 text-right text-lg-right color-blue">
             <h1>
-              <svg width="90" height="110" viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="90" height="110" style="padding-left: 60px;" viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g fill="white">
 <path d="M24.4251 130.615C23.8913 130.081 23.1506 129.774 22.3955 129.774C21.6404 129.774 20.8997 130.081 20.3656 130.615C19.8316 131.149 19.5244 131.89 19.5244 132.645C19.5244 133.4 19.8313 134.141 20.3656 134.674C20.8997 135.208 21.6404 135.516 22.3955 135.516C23.1506 135.516 23.8913 135.209 24.4251 134.674C24.9591 134.141 25.2666 133.4 25.2666 132.645C25.2666 131.89 24.9594 131.149 24.4251 130.615Z" fill="white"/>
 <path d="M134.805 52.5231C134.271 51.9888 133.533 51.6819 132.775 51.6819C132.02 51.6819 131.279 51.9888 130.745 52.5231C130.211 53.0571 129.904 53.7979 129.904 54.553C129.904 55.3081 130.211 56.0488 130.745 56.5826C131.279 57.1166 132.02 57.4241 132.775 57.4241C133.533 57.4241 134.271 57.1169 134.805 56.5826C135.341 56.0488 135.649 55.3081 135.649 54.553C135.649 53.7979 135.341 53.0571 134.805 52.5231Z" fill="white"/>
@@ -756,7 +756,8 @@
     <style>
     #chartdiv {
       width: 100%;
-      height: 520px;
+      height: 470px;
+      margin-top:30px;
     }
     </style>
 
@@ -910,7 +911,7 @@
         var mapPolygonTemplate = series.mapPolygons.template;
         // Instead of our custom title, we could also use {name} which comes from geodata
         mapPolygonTemplate.fill = am4core.color(group.color);
-        mapPolygonTemplate.fillOpacity = 0.8;
+        mapPolygonTemplate.fillOpacity = 0.7;
         mapPolygonTemplate.nonScalingStroke = true;
         mapPolygonTemplate.tooltipPosition = "fixed"
 
@@ -950,7 +951,7 @@
       worldSeries.name = worldSeriesName;
       worldSeries.useGeodata = true;
       worldSeries.exclude = excludedCountries;
-      worldSeries.fillOpacity = 0.6;
+      worldSeries.fillOpacity = 0.5;
       worldSeries.hiddenInLegend = true;
       worldSeries.mapPolygons.template.nonScalingStroke = true;
 
@@ -958,7 +959,7 @@
       chart.legend = new am4maps.Legend();
 
       // Legend styles
-      chart.legend.paddingLeft = 0;
+      chart.legend.paddingLeft = 20;
       chart.legend.paddingRight = 0;
       chart.legend.marginBottom = 15;
       chart.legend.width = am4core.percent(100);
@@ -968,7 +969,16 @@
       chart.legend.layout = "vertical";
       chart.legend.itemContainers.fontSize = "10px";
       chart.legend.itemContainers.fontFamily = "Open Sans";
-      chart.legend.itemContainers.fontWeight = "0.08em";
+      chart.legend.itemContainers.fontWeight = "1px";
+
+      let marker = chart.legend.markers.template.children.getIndex(0);
+      let tmar = chart.legend.markers.template.children.getIndex(1);
+      marker.cornerRadius(12, 12, 12, 12);
+      marker.strokeWidth = 0;
+      marker.strokeOpacity = 1;
+
+
+
 
       // Legend items
       chart.legend.itemContainers.template.interactionsEnabled = true;
@@ -983,18 +993,22 @@
 
 
 
+
     <section id="call-to-action" class="wow fadeInUp">
       <div class="container">
+        <header class="section-header">
+            <h3>Лидирующая сеть нативной рекламы в <strong>странах СНГ</strong></h3>
+        </header>
         <div class="row">
           <div class="col-lg-12 text-center text-lg-left">
-            <h3 class="cta-title">Лидирующая сеть мобильной нативной рекламы в странах СНГ</h3>
+
 
 
             <div id="chartdiv"></div>
 
             <p class="cta-text">
 
-<span class="text-sng">Группа рекламодателей из стран СНГ, занимающих <strong>самые конкурентные рекламные направления:</strong></span>
+<!-- span class="text-sng">Группа рекламодателей из стран СНГ, занимающих <strong>самые конкурентные рекламные направления:</strong></span>
 <span class="badge badge-secondary"><i class="fa fa-heartbeat" aria-hidden="true"></i> здоровье</span>
 <span class="badge badge-secondary"><i class="fa fa-female" aria-hidden="true"></i> красота</span>
 <span class="badge badge-secondary"><i class="fa fa-cutlery" aria-hidden="true"></i> диета</span>
@@ -1002,7 +1016,7 @@
 <span class="badge badge-secondary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> интернет-продажи</span>
 <span class="badge badge-secondary"><i class="fa fa-money" aria-hidden="true"></i> финансы</span>
 <span class="badge badge-secondary"><i class="fa fa-newspaper-o" aria-hidden="true"></i> новости</span>
-<span class="badge badge-secondary"><i class="fa fa-gamepad" aria-hidden="true"></i> развлечения</span>
+<span class="badge badge-secondary"><i class="fa fa-gamepad" aria-hidden="true"></i> развлечения</span-->
 
             </p>
 
@@ -1523,7 +1537,7 @@ Oblivki — приятный, надежный партнер. Работаю с
     <header class="section-header">
         <h3>
 
-отзывы  клиентов
+отзывы  <strong>клиентов</strong>
         </h3>
     </header>
     <div class="row">

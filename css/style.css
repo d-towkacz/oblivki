@@ -1077,15 +1077,34 @@ margin-right: 5px;
 #colls h1 {
   margin-bottom: 0px;
 }
+#colls h1 svg {
+  background: #e2785b;
+    padding: 40px;
+    /* border: 1px solid red; */
+    border-radius: 12px;
+    /* border: 1px solid #ffffff38; */
+    width: 180px;
+    height: 180px;
+    /* box-shadow: 0 0 5px #5d2b1eba; */
+    /* border: 2px solid #ffffffad; */
+    margin-bottom: 20px;
+    /* border: 8px solid #39a294ad; */
+    box-shadow: 4px 4px 1px #1f1f1f38;
+    /* filter: brightness(240%); */
+
+    margin-bottom: 40px;
+}
 #colls h2 {
-  font-weight: 300;
-    font-size: 48px;
-    margin-bottom: 0px;
-    font-family: "Roboto",sans-serif;
-    line-height: 73px;
+  font-weight: 400;
+      font-size: 52px;
+      margin-bottom: 0px;
+      font-family: "Roboto",sans-serif;
+      line-height: 73px;
+      text-shadow: 3px 3px 0px #7b671a6b;
 }
 #colls h4 {
-  font-size: 18px;
+  font-size: 22px;
+  text-shadow: 2px 2px 0px #715e1887;
 }
 
 #colls .color-blue {
