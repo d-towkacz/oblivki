@@ -294,21 +294,22 @@ header.header-scrolled .main-nav .drop-down ul {
 
 .quotes-carousel .block-quote div {
   background: #FFFFFF;
-  border: 1px solid #e27c608f;
-  box-sizing: border-box;
-  box-shadow: 0px 7px 30px #e27c602e;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 60px;
-  padding-bottom: 50px;
-  color: #844c3b7a;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.05em;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 1.7em;
-  background: #fff7f2;
-  text-shadow: 0 0 1px #3333336e;
+    /* border: 1px solid #e27c608f; */
+    box-sizing: border-box;
+    box-shadow: 6px 6px 0px #8e4a3838;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+    background: #e27c60;
+    text-shadow: 1px 1px 0px #77311fc4;
+    border-radius: 22px;
 }
 
 .quotes-carousel .owl-stage-outer {
