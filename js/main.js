@@ -159,10 +159,10 @@
     dots: true,
     loop: true,
     items: 1,
-    //smartSpeed:3600,
-    //fluidSpeed:2000,
-    //autoplaySpeed:2000,
-    //autoplayTimeout:6000,
+    smartSpeed:10600,
+    fluidSpeed:10000,
+    autoplaySpeed:10000,
+    autoplayTimeout:10000,
     //responsive: { 0: { items: 3 }, 768: { items: 5 }, 900: { items: 5 }
     //}
   });
@@ -237,7 +237,7 @@
 
 
 $('#intro').vide({
-  "mp4":"video/video-back2.mp4"
+  //"mp4":"video/video-back2.mp4"
 },{
   className: 'back-video'
 }

@@ -163,7 +163,7 @@ header.header-scrolled .main-nav .drop-down ul {
 
 .why-us .why-us-content .features:hover {
   background: #e27c60;
-  
+
 
 }
 
@@ -216,7 +216,7 @@ header.header-scrolled .main-nav .drop-down ul {
 
 .owl-carousel .owl-item img {
   /* filter: grayscale(100%); */
-  filter: hue-rotate(95deg)
+
 }
 
 .devices-carousel .owl-dot span {
@@ -270,11 +270,11 @@ header.header-scrolled .main-nav .drop-down ul {
 }
 
 .quotes-carousel .block-quote img {
-  display: none;
+
 }
 
 .quotes-carousel .block-quote {
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -299,9 +299,9 @@ header.header-scrolled .main-nav .drop-down ul {
   box-shadow: 0px 7px 30px #e27c602e;
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 50px;
-  color: #E27D60;
+  color: #844c3b7a;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05em;
   font-size: 18px;
