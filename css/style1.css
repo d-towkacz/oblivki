@@ -144,15 +144,15 @@ header.header-scrolled .main-nav .drop-down ul {
 
 .why-us .why-us-content .features {
   border-radius: 10px;
-  background: #ffeba26e;
+  background: none;
   border-bottom: none;
-  box-shadow: 5px 5px 0px #84712d38;
+  box-shadow: none;
 }
 
 .why-us .why-us-content .features h4 {
   color: #E27D60;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-shadow: none;
@@ -160,10 +160,18 @@ header.header-scrolled .main-nav .drop-down ul {
     padding-left: 30px;
     padding-right: 30px;
 }
+.why-us .why-us-content .features h4 span {
+  font-size: 17px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 800;
+}
 
 .why-us .why-us-content .features:hover {
   background: #e27c60;
-
+ transform: scale(1.1);
 
 }
 
@@ -179,6 +187,7 @@ header.header-scrolled .main-nav .drop-down ul {
 .icon-svg-header {
   background: #E27D60;
   /* box-shadow: 2px 2px 0px #652b1b78; */
+  box-shadow: inset 4px 3px 0px #8239255c;
 }
 
 .icon-svg-header svg path {
@@ -337,4 +346,44 @@ header.header-scrolled .main-nav .drop-down ul {
 
 #call-to-action header h3 {
   margin-top:0px;
+}
+.svg-promo {
+  text-align: center;
+      padding-top: 70px;
+}
+.svg-promo svg {
+  width: 50%;
+  height: auto;
+  opacity: 0.9;
+}
+.text-promo {
+  color: #2f120591;
+      text-shadow: 1px 1px 0px #1c5a5200;
+      font-weight: 200;
+      line-height: 1.9em;
+      font-size: 20px;
+      letter-spacing: 0.06em;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background: #ead07717;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-radius: 18px;
+      margin-top: 50px;
+
+}
+.oblivki-logo {
+  font-family: "Quicksand", sans-serif;
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 24px;
+    color: #40b3a3;
+}
+
+.text-promo strong {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #e28678;
+  text-shadow: 1px 1px 0px #5f2a2221;
+  border-bottom: 2px dotted #d4675647;
 }

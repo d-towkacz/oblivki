@@ -8,7 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body {
   background: #fff;
   color: #444;
@@ -2771,14 +2774,14 @@ background: #2196f375;
     border-radius: 35px;
     text-shadow: 1px 1px 0 #944531bd;
     bottom: 48px;
-  
+
 }
 .owl-stage .block-quote img {
   position: absolute;
     width: 120px;
     height: 120px;
     top: 0px;
-    left: 270px;
+    left: calc(50% - 50px);
     /* right: 50%; */
     border-radius: 50%;
     /* margin-top: -10px; */
@@ -2788,4 +2791,83 @@ background: #2196f375;
     /* filter: brightness(1.1); */
     /* padding: 6px; */
     /* background: #FFC107; */
+}
+.quotes-carousel {
+  padding-top: 50px;
+}
+.quotes-carousel .owl-next {
+  position: absolute;
+  right: -70px;
+  top: calc(50% - 100px);
+  outline: none;
+}
+.quotes-carousel .owl-prev {
+  position: absolute;
+  left: -70px;
+  top: calc(50% - 100px);
+}
+.quotes-carousel .owl-next span, .owl-prev span {
+  font-size: 120px;
+  color:#e2c044;
+  opacity: 0.5;
+}
+#colls .container-borders .col-lg-6 h1 svg {
+transition: 0.3s ease-in-out;
+}
+#colls .container-borders .col-lg-6 h1:hover svg {
+  box-shadow: 14px 14px 1px #1f1f1f38;
+  padding: 35px;
+}
+
+.why-us .why-us-content .features p {
+  display: none;
+opacity: 0;
+position: fixed;
+background: #f9d348;
+z-index: 9999999;
+top: 80px;
+padding-top: 15px !important;
+padding-bottom: 15px !important;
+left: -280px;
+right: 275px;
+font-size: 13px !important;
+padding-left: 20px;
+padding-right: 20px !important;
+box-shadow: 0 0 10px #e2c044bd;
+color: #584911 !important;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.6s;
+}
+.why-us .why-us-content .features p::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  right: -8px;
+  transform: rotate(45deg);
+  /* margin-top: -23px; */
+  background: #f8d24a;
+  z-index: -1;
+  /* bottom: -10px; */
+  top: 35%;
+}
+
+.why-us .why-us-content .features:hover p {
+  display: block;
+opacity: 1;
+position: fixed;
+background: #f9d348;
+z-index: 9999999;
+top: 40%;
+padding-top: 15px !important;
+padding-bottom: 15px !important;
+left: -280px;
+right: 275px;
+font-size: 13px !important;
+padding-left: 20px;
+padding-right: 20px !important;
+box-shadow: 0 0 10px #e2c044bd;
+color: #584911 !important;
+transition: 0.5s ease-in-out;
+transition-delay: 0.6s;
 }

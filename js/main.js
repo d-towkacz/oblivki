@@ -156,7 +156,8 @@
     animateOut: 'bounceOutLeft',
     animateIn: 'bounceInRight',
     autoplay: true,
-    dots: true,
+    nav:true,
+    dots: false,
     loop: true,
     items: 1,
     smartSpeed:10600,
@@ -237,7 +238,7 @@
 
 
 $('#intro').vide({
-  //"mp4":"video/video-back2.mp4"
+  "mp4":"video/video-back2.mp4"
 },{
   className: 'back-video'
 }
