@@ -2820,23 +2820,26 @@ transition: 0.3s ease-in-out;
 }
 
 .why-us .why-us-content .features p {
-  display: none;
-opacity: 0;
-position: fixed;
-background: #f9d348;
-z-index: 9999999;
-top: 80px;
-padding-top: 15px !important;
-padding-bottom: 15px !important;
-left: -280px;
-right: 275px;
-font-size: 13px !important;
-padding-left: 20px;
-padding-right: 20px !important;
-box-shadow: 0 0 10px #e2c044bd;
-color: #584911 !important;
-  transition: 0.5s ease-in-out;
-  transition-delay: 0.6s;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  background: #f9d348;
+  z-index: 999999999999;
+  top: 40%;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  left: 10px;
+  right: 10px;
+  font-size: 13px !important;
+  padding-left: 20px;
+  padding-right: 20px !important;
+  box-shadow: 0 0 10px #e2c044bd;
+  color: #584911 !important;
+  transition: 0.1s ease-in-out;
+  transition-delay: 0s;
+  /* bottom: 310px; */
+  top: 290px;
+  border-radius: 8px;
 }
 .why-us .why-us-content .features p::before {
   position: absolute;
@@ -2846,28 +2849,35 @@ color: #584911 !important;
   right: -8px;
   transform: rotate(45deg);
   /* margin-top: -23px; */
-  background: #f8d24a;
+  background: #fdd02c;
   z-index: -1;
   /* bottom: -10px; */
-  top: 35%;
+  /* top: 35%; */
+  top: -5px;
+  /* right: auto; */
+  left: 30px;
 }
 
 .why-us .why-us-content .features:hover p {
   display: block;
-opacity: 1;
-position: fixed;
-background: #f9d348;
-z-index: 9999999;
-top: 40%;
-padding-top: 15px !important;
-padding-bottom: 15px !important;
-left: -280px;
-right: 275px;
-font-size: 13px !important;
-padding-left: 20px;
-padding-right: 20px !important;
-box-shadow: 0 0 10px #e2c044bd;
-color: #584911 !important;
-transition: 0.5s ease-in-out;
-transition-delay: 0.6s;
+  opacity: 1;
+  position: absolute;
+  background: #fdd02c;
+  z-index: 999999999999;
+  top: 40%;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  left: 10px;
+  right: 10px;
+  font-size: 13px !important;
+  padding-left: 20px;
+  padding-right: 20px !important;
+  box-shadow: 0 -3px 15px #9e852a96;
+  color: #584911 !important;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.6s;
+  /* bottom: 310px; */
+  top: 280px;
+  border-radius: 8px;
+  /* margin-top: -100%; */
 }
