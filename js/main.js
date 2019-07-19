@@ -173,7 +173,7 @@
   headerCar.owlCarousel({
     animateOut: 'bounceOutRight',
     animateIn: 'bounceInLeft',
-    autoplay: true,
+    autoplay: false,
     dots: true,
     loop: true,
     items: 1,
@@ -244,6 +244,79 @@ $('#intro').vide({
 }
 );
 
+
+$("#ancrus, .link-contries-map:eq(0)").hover(function(){
+     $("#chartdiv svg path").css({"opacity":"0.2"});
+     $("#ancrus").css({"opacity":"1"});
+     $(".link-contries-map:eq(0)").addClass('hover');
+}, function(){
+     $("#chartdiv svg path").css({"opacity":"1"});
+     $(".link-contries-map:eq(0)").removeClass('hover');
+});
+
+$("#anckz, .link-contries-map:eq(2)").hover(function(){
+     $("#chartdiv svg path").css({"opacity":"0.2"});
+     $("#anckz").css({"opacity":"1"});
+     $(".link-contries-map:eq(2)").addClass('hover');
+}, function(){
+     $("#chartdiv svg path").css({"opacity":"1"});
+     $(".link-contries-map:eq(2)").removeClass('hover');
+});
+
+$("#ancua, .link-contries-map:eq(1)").hover(function(){
+     $("#chartdiv svg path").css({"opacity":"0.2"});
+     $("#ancua").css({"opacity":"1"});
+     $(".link-contries-map:eq(1)").addClass('hover');
+}, function(){
+     $("#chartdiv svg path").css({"opacity":"1"});
+     $(".link-contries-map:eq(1)").removeClass('hover');
+});
+
+
+$("#ancby, .link-contries-map:eq(3)").hover(function(){
+     $("#chartdiv svg path").css({"opacity":"0.2"});
+     $("#ancby").css({"opacity":"1"});
+     $(".link-contries-map:eq(3)").addClass('hover');
+}, function(){
+     $("#chartdiv svg path").css({"opacity":"1"});
+     $(".link-contries-map:eq(3)").removeClass('hover');
+});
+
+$("#ancde, .link-contries-map:eq(4)").hover(function(){
+     $("#chartdiv svg path").css({"opacity":"0.2"});
+     $("#ancde").css({"opacity":"1"});
+     $(".link-contries-map:eq(4)").addClass('hover');
+}, function(){
+     $("#chartdiv svg path").css({"opacity":"1"});
+     $(".link-contries-map:eq(4)").removeClass('hover');
+});
+
+
+$("#ancus, .link-contries-map:eq(5)").hover(function(){
+     $("#chartdiv svg path").css({"opacity":"0.2"});
+     $("#ancus").css({"opacity":"1"});
+     $(".link-contries-map:eq(5)").addClass('hover');
+}, function(){
+     $("#chartdiv svg path").css({"opacity":"1"});
+     $(".link-contries-map:eq(5)").removeClass('hover');
+});
+
+
+// ancde
+
+
+$("#chartdiv svg path").click(function(e) {
+  $("#Layer_1 path").removeAttr("style");
+  var $this = $(this);
+  var bbox = this.getBBox();
+  var centreX = bbox.x + bbox.width/2;
+  var centreY = bbox.y + bbox.height/2;
+  $this.css("transform-origin", centreX + 'px ' + centreY + 'px');
+  $this.css("transform", "scale(2)");
+  $this.css("stroke", "white");
+  $this.css("fill", "green");
+  this.parentElement.appendChild(this);
+});
 
 
 // $('.icon-svg-header').hover(function(){

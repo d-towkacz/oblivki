@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>ZingSoft Demo</title>
+		<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+	<script>
+	  zingchart.loadModules('maps,maps-world-countries');
+	</script>
+
+
+<style>.zc-ref, #myChart-license-text {
+  display: none;
+}
+
+zing-grid[loading]{height:800px;}</style></head>
+	<body>
+		<div id='myChart'></div>
+	<script>ZC.LICENSE=["b55b025e438fa8a98e32482b5f768ff5"];zingchart.THEME="classic";
+var myConfig = {
+    "background-color":"white",
+
+    "source":{
+        "text":"",
+        "font-family":"arial",
+        "bold":"false",
+        "color":"#666666"
+    },
+    "shapes":[
+        {
+            "type":"zingchart.maps",
+            "options":{
+                "id":"map",
+								"zooming": false,
+                "name":"world.countries",
+                "scale":true,
+                "x":"17%",
+                "y":"19%",
+                "width":"100%",
+                "height":"100%",
+                "style":{
+                    "background-color":"#ebebeb",
+                    "controls":{
+                      "placement": 'tr'
+                    },
+                    "label":{
+                        "visible":0
+                    },
+                    "tooltip":{
+                        "border-radius":"0"
+                    }
+                }
+            }
+        },
+        {
+            "type":"circle",
+            "id":"1950",
+            "cursor":"pointer",
+            "size":10,
+            "x":"5%",
+            "y":"27%",
+            "border-width":"1px",
+            "border-color":"#a5a5a5",
+            "background-color":"#163D6B",
+            "label":{
+                "text":"1950",
+                "offset-x":30,
+                "font-family":"arial",
+                "font-color":"#666666"
+            }
+        },
+        {
+            "type":"circle",
+            "id":"1990",
+            "cursor":"pointer",
+            "size":10,
+            "x":"5%",
+            "y":"37%",
+            "background-color":"#4E6C90",
+            "border-width":"1px",
+            "border-color":"#a5a5a5",
+            "label":{
+                "text":"1990",
+                "offset-x":30,
+                "font-family":"arial",
+                "font-color":"#666666"
+            }
+        },
+        {
+            "type":"circle",
+            "id":"2000",
+            "cursor":"pointer",
+            "size":10,
+            "x":"5%",
+            "y":"47%",
+            "background-color":"#879CB5",
+            "border-width":"1px",
+            "border-color":"#a5a5a5",
+            "label":{
+                "text":"2000",
+                "offset-x":30,
+                "font-family":"arial",
+                "font-color":"#666666"
+            }
+        },
+        {
+            "type":"circle",
+            "id":"2010",
+            "cursor":"pointer",
+            "size":10,
+            "x":"5%",
+            "y":"57%",
+            "background-color":"#c0ccdb",
+            "border-width":"1px",
+            "border-color":"#a5a5a5",
+            "label":{
+                "text":"2010",
+                "offset-x":30,
+                "font-family":"arial",
+                "font-color":"#666666"
+            }
+        }
+    ]
+};
+
+zingchart.render({
+	id : 'myChart',
+	data : myConfig,
+});
+
+// Keep track of last shape clicked
+var lastClick = null;
+
+// Population data for updating the chart
+var population = {
+    "1950": {
+      "states": ['NY','CA','PA','IL','OH','TX','MI','NJ','MA','NC','MO','IN','GA','WI','VA','TN','AL'],
+      "bgColor": "#163D6B"
+    },
+    "1990": {
+      "states": ['CA','NY','TX','FL','PA','IL','OH','MI','NJ','NC','GA','VA','MA','IN','MO','WI','TN','WA','MD','MN','LA','AL','KY','AZ','SC','CO','CT','OK'],
+      "bgColor": "#4E6C90"
+    },
+    "2000": {
+      "states": ['CA','TX','NY','FL','IL','PA','OH','MI','NJ','GA','NC','VA','MA','IN','WA','TN','MO','WI','MD','AZ','MN','LA','AL','CO','KY','SC','OK','OR','CT'],
+      "bgColor": "#879CB5"
+    },
+    "2010": {
+      "states": ['CA','TX','NY','FL','IL','PA','OH','MI','GA','NC','NJ','VA','WA','MA','IN','TN','AZ','MO','MD','WI','MN','CO','AL','SC','LA','KY','OR','OK','CT','IA'],
+      "bgColor": "#c0ccdb"
+    }
+};
+
+// Returns the styled items object
+function createItems (year) {
+  var data = population[year];
+  var items = {};
+  data.states.forEach(function (state) {
+    var stateItem = {
+      "background-color":data.bgColor,
+      "border-color":"#a5a5a5",
+      "border-width":1,
+      "label":{
+          "visible":0
+      },
+      "hover-state": {
+        "visible":false
+      },
+      "tooltip":{
+          "border-radius":"0"
+      }
+    }
+    items[state] = stateItem;
+  });
+  return items;
+}
+
+// Deep copy a Javascript object
+function copy (obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
+
+// Bind the shapeclick
+zingchart.shape_click = function (p) {
+  var year = p.shapeid;
+  if (Object.keys(population).indexOf(year) < 0) {
+    return;
+  }
+  if (lastClick == year) {
+    lastClick = null;
+    zingchart.exec('myChart', 'setdata', {
+      data: myConfig
+    });
+  }
+  else {
+    lastClick = year;
+    var newData = copy(myConfig);
+    newData.shapes[0].options.style.items = createItems(year);
+    zingchart.exec('myChart', 'setdata', {
+      data: newData
+    });
+  }
+}</script></body>
+</html>
